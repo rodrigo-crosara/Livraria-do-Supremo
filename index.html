@@ -1,0 +1,2460 @@
+<!--
+
+Página: Principal (Home)
+Autor: Rodrigo Crosara (rodrigo.crosara@stf.jus.br)
+Criado: 17/03/2023
+Atualizado: 19/04/2023
+Versão: 3.4
+
+# PUBLICAÇÃO: 99060
+
+https://livrariasupremo.stf.jus.br
+
+-->
+<!DOCTYPE html>
+<html lang="pt-Br" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supremo Tribunal Federal</title>
+    <link href="https://portal.stf.jus.br/assets/styles/custom.css" rel="stylesheet">
+    <link href="https://portal.stf.jus.br/assets/styles/bootstrap.css" rel="stylesheet">
+    <link href="https://portal.stf.jus.br/assets/styles/bundle.css" rel="stylesheet">
+    <link href="https://portal.stf.jus.br/assets/styles/textos/textos.css" rel="stylesheet">
+    <link href="https://portal.stf.jus.br/assets/styles/cabecalho.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://portal.stf.jus.br/https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/favicon.ico" rel="icon" type="imagem/png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <style type="text/css"> 
+        #imagemProduto{display:none;}
+        .tituloPublicacao{display:none;}
+        #listaPublicacao{display:none;}
+        #tituloConteudo{display:none;}
+        #menuMeuCadastro {display:none;}
+        #compraProduto {display:none;}
+        #rodape {display:none;}
+        body { margin:0px; padding:0px; }
+        div#frame { margin: 0px auto; width: 100%; }
+      </style>
+      
+      <style type="text/css">
+          a:hover { text-decoration: underline; }
+          .img-thumbnail, .cta-link, .nav-link{ transition: all 0.2s ease; cursor: pointer; }
+          .img-thumbnail:hover{ box-shadow: 5px 6px 6px 2px #e9ecef; transform: scale(1.1); }
+          .cta-link:hover, .nav-link:hover { transform: scale(1.1); }
+          .bg1, .accordion-button:not(.collapsed), .accordion-button { background-color: #14539a; }
+          .bg2 { background-color: #cfe2ff; }
+          .accordion-button:not(.collapsed)::after, .accordion-button::after { background-color: #fff; }
+          .azul1, h5 a, h6 a { color: #005394 !important; }
+          h3 button strong { color: #fff; }
+          .azul2, h5 a:hover, .nav-link:hover { color: #006eab; }
+          .figure-caption { margin: 5px 5px 0 0; }
+          .imgcopy { width: 100%; margin: 0 3px 3px 0; text-align: right; }
+          .imgcopy p { margin: 0; background-color: #fff; padding: 0 7px 0 7px; color: #000; display: inline-block; font-size: 11px; }
+          .btn.btn-default-bordered { box-shadow: 0 2px 2px rgb(0 0 0 / 16%); border: 1px solid #848788; padding: 0 7px; font-size: 13px; height: 30px; line-height: 29px; }
+          .accordion-button::after { margin: 7px; }
+          .fs-7 { font-size: 13px; margin: 0; }
+          .alert { font-size: 12px; }
+          blockquote { border-top: 1px solid #dfdfdf; padding-top: 14px; }
+          h5 strong { font-weight: 600; }
+          .card ul li { margin: 3px; }
+          .card2 { border-top: 0.3rem solid #005394; transition: all 0.2s ease; cursor: pointer; -webkit-border-radius: 0.8rem; -moz-border-radius: 0.8rem; border-radius: 0.8rem; }
+          .card2:hover { box-shadow: 5px 6px 6px 2px #e9ecef; transform: scale(1.1); z-index: 9999; background-color: #005394; color: #fff !important; }
+          .azul3 { color: #005394; text-decoration: none !important; }
+          i { font-style: italic; }
+          .img-thumbnail { max-width: 170px; min-width: 170px; padding: 10px; }
+          .nav-item .active, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus { background-color: #fff !important; color: #000 !important; }
+          #calAntigos { min-width: 69px; }
+          .title-cal { margin: 7px 17px 7px 7px; }
+          mark { background: yellow; }
+          mark.current { background: orange; }
+          .xformBusca { padding: 0 7px; width: 70%; }
+          .fixaBusca { position: fixed; bottom: 0; left: 0; z-index: 99; }
+          @media only screen and (max-width: 991px) { .navbar-light .navbar-toggler { border-color: rgb(0 83 148); } .xformBusca { width: 100%; padding: 0; position: fixed; bottom: 0; left: 0; border-top: 3px solid #14539a; } .img-thumbnail { width: 130px; max-width: 130px; min-width: 130px; margin-bottom: 10px; } ul.nav.nav-pills.ms-3.mt-3 { margin-left: 11px !important; } a.nav-link.btn.btn-default-bordered.rounded-0.me-3 { margin: 3px !important; } .title-cal { width:100%; } }
+
+          #myBtn { position: fixed; bottom: 50px; right: 11px; z-index: 999; }
+          .accordion-body .card { min-height: 200px; }
+          h6.card-header { color: #005591; }
+          .disabled { color: #b4bcc0 !important; border-color: #b4bcc0 !important; }
+
+      </style>
+
+      <script type="text/javascript">
+        $(function() {
+
+        var $input = $("input[type='search']"),
+          $clearBtn = $("button[data-search='clear']"),
+          $prevBtn = $("button[data-search='prev']"),
+          $nextBtn = $("button[data-search='next']"),
+          $content = $(".content"),
+          $results,
+          currentClass = "current",
+          offsetTop = 50,
+          currentIndex = 0;
+
+        /**
+         * Saltar para o elemento correspondente ao currentIndex
+         */
+        function jumpTo() {
+          if ($results.length) {
+            var position,
+              $current = $results.eq(currentIndex);
+            $results.removeClass(currentClass);
+            if ($current.length) {
+              $current.addClass(currentClass);
+              position = $current.offset().top - offsetTop;
+              window.scrollTo(0, position);
+            }
+          }
+        }
+
+        /**
+         * Procurar a palavra-chave inserida no
+         * contexto especificado na entrada
+         */
+        $input.on("input", function() {
+          var searchVal = this.value;
+          $content.unmark({
+            done: function() {
+              $content.mark(searchVal, {
+                separateWordSearch: false,
+                done: function() {
+                  $results = $content.find("mark");
+                  currentIndex = 0;
+                  //$( ".xformBusca" ).addClass( "fixaBusca" );
+                  jumpTo();
+                }
+              });
+            }
+          });
+        });
+
+        /**
+         * Limpar a pesquisa
+         */
+        $clearBtn.on("click", function() {
+          $content.unmark();
+          //$( ".xformBusca" ).removeClass( "fixaBusca" );
+          $input.val("").focus();
+        });
+
+        /**
+         * Salto para a pesquisa seguinte e anterior
+         */
+        $nextBtn.add($prevBtn).on("click", function() {
+          if ($results.length) {
+            currentIndex += $(this).is($prevBtn) ? -1 : 1;
+            if (currentIndex < 0) {
+              currentIndex = $results.length - 1;
+            }
+            if (currentIndex > $results.length - 1) {
+              currentIndex = 0;
+            }
+            jumpTo();
+          }
+        });
+      });
+      </script>
+
+  </head>
+  <body>
+
+    <div id="home" class="container shadow" style="max-width: 1150px; padding: 0 17px 0 17px;">
+
+      <!-- Cabeçalho -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top p-0" style="border-bottom: 3px solid #14539a;">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/logolivrariadosupremo.png" alt="LIVRARIA DO SUPREMO" class="img-fluid" style="max-width: 210px;" /></a>
+          <!-- Pesquisar na Página -->
+          <div class="xformBusca input-group">
+            <span class="input-group-text"><i class="fas fa-search azul1"></i></span>
+            <input type="search" class="form-control" placeholder="Pesquisar..." style="min-height: 44px;">
+            <span class="input-group-text">
+              <button class="border shadow rounded azul1" data-search="next">&darr;</button>
+              <button class="border shadow rounded azul1" data-search="prev">&uarr;</button>
+              <button class="border shadow rounded azul1" data-search="clear">✖</button>
+            </span>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link azul1" href="https://livrariasupremo.stf.jus.br/minhaCompra.action"><i class="fas fa-search-plus"></i> Consultar Pedido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link azul1" href="https://livrariasupremo.stf.jus.br/pedido.action"><i class="fas fa-cart-plus"></i> Minhas Compras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner Principal -->
+      <div id="carouselExampleIndicators" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner shadow rounded-bottom">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <a target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=502465">
+               <img src="http://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/imagem/anuncio_botton.png" class="d-block w-100">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <a target="_blank" href="mailto:livraria.codi@stf.jus.br?subject=Gostaria%20de%20fazer%20um%20pedido">
+               <img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/imagem/pedido.jpg" class="d-block w-100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendários STF -->
+      <ul class="nav nav-tabs justify-content-end bg-gradient bg1 border-0 rounded-top" id="myTab" role="tablist">
+        <li class="title-cal"><h5 class="card-header text-white rounded-0"><strong><i class="fas fa-calendar-alt"></i> Calendários STF:</strong></h5></li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white active" id="c2023-tab" data-bs-toggle="tab" data-bs-target="#c2023" type="button" role="tab" aria-controls="c2023" aria-selected="true"><strong>2023</strong></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="c2022-tab" data-bs-toggle="tab" data-bs-target="#c2022" type="button" role="tab" aria-controls="c2022" aria-selected="false"><strong>2022</strong></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="c2021-tab" data-bs-toggle="tab" data-bs-target="#c2021" type="button" role="tab" aria-controls="c2021" aria-selected="false"><strong>2021</strong></button>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><strong>ººº</strong></a>
+          <ul id="calAntigos" class="dropdown-menu">
+            <li><a class="dropdown-item" target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/calendarioSTF2020.pdf">2020</a></li>
+            <li><a class="dropdown-item" target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/calendarioSTF2019.pdf">2019</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="c2023" role="tabpanel" aria-labelledby="c2023-tab">
+          <a href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/calendarioSTF2023.pdf" target="_blank">
+            <img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/imagem/BcalendarioSTF2023.png" class="d-block w-100 shadow rounded-bottom">
+          </a>
+        </div>
+        <div class="tab-pane fade" id="c2022" role="tabpanel" aria-labelledby="c2022-tab">
+          <a href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/calendarioSTF2022.pdf" target="_blank">
+            <img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/imagem/BcalendarioSTF2022.png" class="d-block w-100 shadow rounded-bottom">
+          </a>
+        </div>
+        <div class="tab-pane fade" id="c2021" role="tabpanel" aria-labelledby="c2021-tab">
+          <a href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/calendarioSTF2021.pdf" target="_blank">
+            <img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/imagem/BcalendarioSTF2021.png" class="d-block w-100 shadow rounded-bottom">
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="row mt-3">
+        <div class="col-lg-6 text-center">
+          <a class="azul3" target="_blank" href="https://livrariasupremo.stf.jus.br/produto.action?grupoId=newsletter">
+            <div class="card card2 bg-gradient shadow">
+              <div class="card-body">
+                  <h5 class="card-title"><strong><i class="fas fa-envelope"></i> Receba nossas Newsletters</strong></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <a class="azul3" target="_blank" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=informativoSTF">
+            <div class="card card2 bg-gradient shadow">
+              <div class="card-body">
+                <h5 class="card-title"><strong><i class="fas fa-tablet-alt"></i> Acesse o Informativo Semanal</strong></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navegação de Categorias -->
+      <ul class="nav nav-pills nav-justified bg-gradient shadow bg1 border-0 rounded mt-3">
+        <li class="nav-item border-end"><a class="nav-link text-white pt-3" href="#PubEdit"><strong>Publicações Editoriais</strong></a></li>
+        <li class="nav-item border-end"><a class="nav-link text-white pt-3" href="#ColJuri"><strong>Coletâneas de Jurisprudência</strong></a></li>
+        <li class="nav-item border-end"><a class="nav-link text-white pt-4" href="#Sumulas"><strong>Súmulas</strong></a></li>
+        <li class="nav-item border-end"><a class="nav-link text-white pt-3" href="#BibTema"><strong>Bibliografias Temáticas</strong></a></li>
+        <li class="nav-item border-end"><a class="nav-link text-white pt-4" href="#CaseLaw"><strong>Case Law</strong></a></li>
+        <li class="nav-item border-end"><a class="nav-link text-white" href="#BolJuIn"><strong>Boletins de Jurisprudência Internacional</strong></a></li>
+        <li class="nav-item"><a class="nav-link text-white pt-3" href="#InfCont"><strong>Informações e Contatos</strong></a></li>
+      </ul>
+
+
+      <!-- Navegação Lateral -->
+      <div id="myBtn" title="Acessibilidade de Navegação" class="form-floating">
+        <select onchange="if (this.value) window.location.href=this.value; this.selectedIndex = 0;" class="form-select bg-light text-center shadow" style="padding: 0 20px 0 0; max-width: 36px; background-image: inherit; border: 1px solid #14539a;">
+          <option class="d-none" selected=""></option>
+          <option class="h5" value="#home" >Ir ao topo &uarr;</option>
+          <option class="h5" value="#PubEdit">Publicações Editoriais</option>
+          <option class="h5" value="#ColJuri">Coletâneas de Jurisprudência</option>
+          <option class="h5" value="#Sumulas">Súmulas</option>
+          <option class="h5" value="#BibTema">Bibliografias Temáticas</option>
+          <option class="h5" value="#CaseLaw">Case Law</option>
+          <option class="h5" value="#BolJuIn">Boletins de Jurisprudência Internacional</option>
+          <option class="h5" value="#InfCont">Informações e Contatos</option>
+          <option class="h5" value="#fim">Ir ao rodapé &darr;</option>
+        </select>
+        <label for="floatingSelect" style="font-size: 33px; opacity: inherit; color: #14539a;"><i class="fas fa-ellipsis-v"></i></label>
+      </div>
+
+      <!-- conteúdo -->
+      <div class="accordion content" id="accordionAno">
+
+        <!-- Item - PubEdit -->
+        <div id="PubEdit" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingPubEdit">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePubEdit" aria-expanded="true" aria-controls="collapsePubEdit">
+              <strong><i class="fas fa-window-minimize"></i> Publicações Editoriais</strong>
+            </button>
+          </h3>
+          <div id="collapsePubEdit" class="accordion-collapse collapse show" aria-labelledby="headingPubEdit">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+
+                <div class="alert alert-primary fs-6 mb-0 rounded-0" role="alert">
+                  As publicações editoriais do STF são livros que passam pelo processo de seleção, revisão e diagramação. Após o lançamento, a atualização jurisprudencial do livro ocorrerá apenas na edição seguinte. Por isso, nesse tipo de obra você encontrará informações sobre a data de conclusão e a emenda ou o dispositivo final.
+                </div>
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/a_constituicao_e_o_supremo_6a_edicao.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/1.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>A Constituição e o Supremo <br>6ª edição</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até a EC 99/2017</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição especial de 30 anos da constituição de 1988</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/a_constituicao_e_o_supremo_6a_edicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/a_constituicao_e_o_supremo_6a_edicao.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/a_constituicao_e_o_supremo_6a_edicao.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=388787#cfmp3" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/legislacaoConstituicao/anexo/CF.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/2.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Constituição Federal</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até a EC 128/2022</strong></p>
+                        <p class="m-0 pt-0 pb-2">Disponível em diversos formatos impressos e eletrônicos, em três idiomas</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/legislacaoConstituicao/anexo/CF.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/legislacaoConstituicao/anexo/brazil_federal_constitution.pdf" target="_blank"><i class="fas fa-file-alt"></i> <strong>ING</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/legislacaoConstituicao/anexo/CF_espanhol_web.pdf" target="_blank"><i class="far fa-file-alt"></i> <strong>ESP</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CF_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/30_anos_da_constituicao.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/3.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Constituição Federal: 30 Anos Catálogo Comemorativo</strong></h6>
+                        <p class="m-0 pt-0 pb-2">A obra relembra a trajetória da Constituinte e a promulgação da Constituição Cidadã, além de reunir informações sobre o STF.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/30_anos_da_constituicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CF_34anos_EC125_digital.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/4.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Constituição Federal Edição comemorativa de 34 anos</strong></h6>
+                        <p class="m-0 pt-0 pb-2">Obra atualizada até a EC 125/2022 (de 14 de junho de 2022) em uma edição comemorativa.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CF_34anos_EC125_digital.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://suprema.stf.jus.br/index.php/suprema/issue/view/3/3"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/5.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Suprema - revista de Estudos Constitucionais</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>v.1 n.2 (2021)</strong></p>
+                        <p class="m-0 pt-0 pb-2">Periódico científico semestral, realizado pelo Supremo Tribunal Federal.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://suprema.stf.jus.br/index.php/suprema/issue/view/3/3" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=publicacaoPublicacaoInstitucionalMemoriaJurisprud"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/6.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Memória Jurisprudencial</strong></h6>
+                        <p class="m-0 pt-0 pb-2">Coleção que recupera a memória institucional do STF por meio do resgate da vida e da obra de ministros</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=publicacaoPublicacaoInstitucionalMemoriaJurisprud" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=publicacaoPublicacaoInstitucionalMemoriaJurisprud" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/codi/anexo/Pesquisa_Plenario_Virtual.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/7.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>O Plenário Virtual na Pande-mia da COVID-19</strong></h6>
+                        <p class="m-0 pt-0 pb-2">Potencialidades de impacto do Plenário Virtual no desenho da instituição, esecialmente no contexto da pandemia do Covid-19.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/codi/anexo/Pesquisa_Plenario_Virtual.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Dossie_Covid1612digital.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/8.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Dossiê: STF na Pandemia de Covid-19</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Dezembro, 2021</strong></p>
+                        <p class="m-0 pt-0 pb-2">Informações relacionados à produtividade e às adaptações realizadas pelo Supremo Tribunal Federal (STF).</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Dossie_Covid1612digital.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/STF_ConvencaoAmericanaSobreDireitosHumanos_SegundaEdicao.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/9.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Convenção Americana sobre Direitos Humanos 2ª Edição</strong></h6>
+                        <p class="m-0 pt-0 pb-2">Anotada com a jurisprudência do Supremo Tribunal Federal e da Corte Interamericana de Direitos Humanos.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/STF_ConvencaoAmericanaSobreDireitosHumanos_SegundaEdicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoRTJ/anexo/239_1.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/10.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Revista Trimestral de Jurisprudência 239</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 20/04/2020</strong></p>
+                        <p class="m-0 pt-0 pb-2">Coletânea de acórdãos e decisões monocráticas do Tribunal</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoRTJ/anexo/239_1.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>OUTRAS EDIÇÕES DA RTJ</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Eleitoral_2ed.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/11.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Coletânea Temática de Jurisprudência: Direito Eleitoral</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>2ª edição</strong></p>
+                        <p class="m-0 pt-0 pb-2">Data: setembro, 2022</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Eleitoral_2ed.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_direito_eleitoral.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/12.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Coletânea Temática de Jurisprudência: Direito Eleitoral</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>1ª edição</strong></p>
+                        <p class="m-0 pt-0 pb-2">Data: novembro, 2015</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_direito_eleitoral.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Eleitoral.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Eleitoral.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_de_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Penal.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/13.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Coletânea Temática de Jurisprudência: Direito Penal e Processual Penal - 3ª edição</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizado até o DJE de 29/9/2017 e o Informativo STF 879</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Penal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Penal.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Penal.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_penal_3_ed_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_controle_de_constitucionalidade.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/14.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Coletânea Temática de Jurisprudência: Controle de Constitucionalidade</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até o DJE de 30/10/2018 e o Informativo STF 912</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_controle_de_constitucionalidade.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Controle_Constitucionalidade.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Controle_Constitucionalidade.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_cc_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Humanos.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/15.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Coletânea Temática de Jurisprudência: Direitos Humanos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até o DJE de 16/6/2017 e o Informativo STF 868</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Humanos.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Humanos.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Humanos.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_dh_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_advocacia_e_oab.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/16.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Coletânea Temática de Jurisprudência: Advocacia e OAB</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até Fevereiro de 2020</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_advocacia_e_oab.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/ctj_advocacia_e_oab.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Cadernos_STF_Povos_Indigenas_digital.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/182.jpg" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Caderno de Jurisprudência do STF - Direitos Humanos Direito dos Povos Indígenas</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra: Abril de 2023</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Cadernos_STF_Povos_Indigenas_digital.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CadernosSTFIgualdadeRacial_web.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/183.jpg" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Caderno de Jurisprudência do STF - Direitos Humanos Direito à Igualdade Racial</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra: Março de 2023</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CadernosSTFIgualdadeRacial_web.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/2_Cadernos_STF_Genero_Direito_das_Mulheres.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/17.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Caderno de Jurisprudência do STF - Direitos Humanos Direitos das Mulheres</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra: Março de 2023</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/2_Cadernos_STF_Genero_Direito_das_Mulheres.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/1_Cadernos_STF_LGBTQIA.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/18.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Caderno de Jurisprudência do STF - Direito das Pessoas LGBTQIAP+</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra: Setembro de 2022</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/1_Cadernos_STF_LGBTQIA.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/diversidade.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/19.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Diversidade</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Jurisprudência do STF e Bibliografia Temática</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/diversidade.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/protecao_da_mulher.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/20.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Proteção da Mulher</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até o DJE de 20/12/2018 e o Informativo STF 928</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/protecao_da_mulher.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/protecao_da_mulher_audio.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/igualdade_etnico_racial.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/21.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Igualdade Étnico-Racial e Políticas de Cotas e Compensação</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até o DJE de 2/8/2018 e o Informativo STF 908</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/igualdade_etnico_racial.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/cotas_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/dca.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/22.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Direitos da Criança e do Adolescente</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até o DJE de 22/9/2017 e o Informativo STF 878</strong></p>
+                        <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/dca.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/dca_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2014.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/23.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2014: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 3/8/2015</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2014</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2014.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2014.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2014.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativo2014mp3.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2015.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/24.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2015: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 6/5/2016</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2015</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2015.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2015.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2015.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos_2015_com_notas.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2016.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/25.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2016: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 20/2/2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2016</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2016.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2016.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2016.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2016mp3.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2017.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/26.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2017: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 25/7/2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2017</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2017.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2017.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2017.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2017mp3.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2018.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/27.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2018: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 24/6/2019</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2018</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2018.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativo2018mp3.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Informativos_20142018.zip"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/28.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2014-2018: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 29/10/2019</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em um período de 5 anos (2014-2018)</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Informativos_20142018.zip" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://livrariasupremo.stf.jus.br/produto.action?grupoId=produtoInformativo2014_2018" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2019.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/29.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Informativos STF 2019: Teses e Fundamentos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 08/7/2020</strong></p>
+                        <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2019</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2019.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/Informativos_2019_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaNaJurisprudencia/anexo/Livro_Sumulas_Vinculantes_2_edicao.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/30.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Súmulas Vinculantes: Aplicação e Interpretação pelo STF - 2ª Edição</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 28/9/2017</strong></p>
+                        <p class="m-0 pt-0 pb-2">Agrupamento de decisões monocráticas e colegiadas e suas aplicações aos casos concretos respectivos</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaNaJurisprudencia/anexo/Livro_Sumulas_Vinculantes_2_edicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaNaJurisprudencia/anexo/Livro_Sumulas_Vinculantes_2_edicao.epub" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaNaJurisprudencia/anexo/Livro_Sumulas_Vinculantes_2_edicao.mobi" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/livro_sumulas_vinculantes_2_edicao.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComemoracoes/anexo/Ministro_Marco_Aurelio_25_anos_no_STF.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/31.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Ministro Marco Aurélio: 25 anos no STF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 14/5/2015</strong></p>
+                        <p class="m-0 pt-0 pb-2">Livro-homenagem ao Ministro Marco Aurélio pelo Jubileu de Prata no STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComemoracoes/anexo/Ministro_Marco_Aurelio_25_anos_no_STF.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComemoracoes/anexo/Ministro_Celso_de_Mello_25_anos_no_STF.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/32.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Ministro Celso de Mello: 25 anos no STF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 21/7/2014</strong></p>
+                        <p class="m-0 pt-0 pb-2">Livro-homenagem ao Ministro Celso de Mello pelo Jubileu de Prata no STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComemoracoes/anexo/Ministro_Celso_de_Mello_25_anos_no_STF.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalEdicaoHomenagem/anexo/31_anos_min_marcoaurelio.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/33.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Edição de Homenagem Ministro Marco Aurélio</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>31 anos de ciência e consciência constitucionais</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalEdicaoHomenagem/anexo/31_anos_min_marcoaurelio.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalEdicaoHomenagem/anexo/31_anos_min_celsodemello.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/34.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Edição de Homenagem Ministro Celso de Mello</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>31 anos de Jurisdição Constitucional</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalEdicaoHomenagem/anexo/31_anos_min_celsodemello.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComposicPlenarias/anexo/composicoes_plenarias.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/35.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Catálogo de Composições Plenárias do Supremo Tribunal Federal</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Versão em PDF atualizada até Setembro de 2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Material iconográfico</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComposicPlenarias/anexo/composicoes_plenarias.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/presidenciadostf.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/36.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Presidência do Supremo Tribunal Federal</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Ministro Dias Toffoli</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/presidenciadostf.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/sobreStfAcervoArquivo/anexo/CatalogodoArquivo.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/37.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Catálogo de Processos Históricos do STF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Período de 1763 a 1891</strong></p>
+                        <p class="m-0 pt-0 pb-2">Conjunto de processos históricos do órgão de cúpula do Judiciário brasileiro</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/sobreStfAcervoArquivo/anexo/CatalogodoArquivo.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/ARQUIVO/NORMA/REGIMENTOINTERNO-C-1980.PDF"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/38.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Regimento Interno do Supremo Tribunal Federal</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até a Emenda Regimental 58/2022</strong></p>
+                        <p class="m-0 pt-0 pb-2">A lei interna do STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/ARQUIVO/NORMA/REGIMENTOINTERNO-C-1980.PDF" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/legislacaoRegimentoInterno/anexo/ristf_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/sobreStfAcervoMuseu/anexo/CatlogodoMuseucolorADD.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/39.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Catálogo de Acervo Histórico e Cultural do STF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Versão com ColorADD, código para daltônicos.</strong></p>
+                        <p class="m-0 pt-0 pb-2">Conjunto de objetos reunidos em quase 200 anos de existência do orgão, desde sua criação, em 1808.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/sobreStfAcervoMuseu/anexo/CatlogodoMuseucolorADD.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/catalogodeobrasrarasdoSTF.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/40.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Catálogo de Obras Raras do STF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Século XVI ao XIX</strong></p>
+                        <p class="m-0 pt-0 pb-2">Conjunto de obras raras que compreende títulos do acervo geral e de coletâneas particulares</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/catalogodeobrasrarasdoSTF.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalCuriosidade/anexo/Notas_sobre_o_Supremo_Tribunal_2014_eletronica.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/41.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Notas sobre o Supremo Tribunal (Império e República) - 4ª edição</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até 2014</strong></p>
+                        <p class="m-0 pt-0 pb-2">Notas informativas sobre o Supremo Tribunal do Império à República</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalCuriosidade/anexo/Notas_sobre_o_Supremo_Tribunal_2014_eletronica.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/notas_sobre_o_supremo_tribunal_audiolivro.zip" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaGlossarioMirim/anexo/Cartilha_Glossrio_STF16042018_FINAL__ELETRNICO.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/42.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Cartilha do Poder Judiciário</strong></h6>
+                        <p class="m-0 pt-0 pb-2">Produzida para auxiliar o público infantil na copreensão do tema, a cartilha fala sobre as atribuições e a estrutura do Judiciário, entre outros temas.</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaGlossarioMirim/anexo/Cartilha_Glossrio_STF16042018_FINAL__ELETRNICO.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/transparenciaRelatorioGestao/anexo/RG2021310317h30v_eletronica.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/43.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Relatório de Gestão</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>2021</strong></p>
+                        <p class="m-0 pt-0 pb-2">Relatório de Gestão do STF compreende o período entre 1º/1/2021 e 31/12/2021</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/transparenciaRelatorioGestao/anexo/RG2021310317h30v_eletronica.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/RelatorioAtividadesSTF2022.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/44.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Relatório de Atividades</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>2022</strong></p>
+                        <p class="m-0 pt-0 pb-2">Resumo das atividades prestadas pelo STF durante o ano de 2022</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/RelatorioAtividadesSTF2022.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-volume-up"></i> <strong>MP3</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - PubEdit - fim -->
+
+                
+        <!-- Item - ColJuri -->
+        <div id="ColJuri" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingColJuri">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColJuri" aria-expanded="true" aria-controls="collapseColJuri">
+              <strong><i class="fas fa-window-minimize"></i> Coletâneas de Jurisprudência <span class="text-white fs-7">(Atualização Periódica)</span></strong>
+            </button>
+          </h3>
+          <div id="collapseColJuri" class="accordion-collapse collapse show" aria-labelledby="headingColJuri">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+
+                <div class="alert alert-primary fs-6 mb-0 rounded-0" role="alert">
+                  As coletâneas de jurisprudência divulgam decisões relevantes do STF e estão em constante atualização em nosso site. Dividem-se em dois grupos: coletâneas temáticas, que organizam os julgados em um sumário com tópicos de um ramo do Direito; e coletâneas anotadas, que elencam as decisões ao longo da norma em análise.
+                </div>
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/DirPenal_ProcPenal.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/45.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Direito Penal e Processual Penal</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até março de 2019</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/DirPenal_ProcPenal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/publicacaotematica/vertema.asp?lei=1324" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/DESAP.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/46.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Desapropriação</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/DESAP.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/EXT.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/47.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Extradição</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/EXT.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CPI.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/48.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>O Supremo Tribunal Federal e as Comissões Parlamentares de Inquérito</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CPI.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/constituicao.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/49.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>A Constituição e o Supremo</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/constituicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/constituicao-supremo/" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Lei_8906.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/50.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Lei do Estatuto da Advocacia e da OAB</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Lei_8906.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/constituicao-supremo/leis-infraconstitucionais/" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Lei_9868.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/51.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Lei da ADI, da ADC e da ADO</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Lei_9868.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/constituicao-supremo/leis-infraconstitucionais/" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Lei_9882.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/52.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Lei da ADPF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Texto atualizado até dezembro de 2017</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Lei_9882.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/constituicao-supremo/leis-infraconstitucionais/" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO PESQUISÁVEL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - ColJuri - fim -->
+
+
+        <!-- Item - Sumulas -->
+        <div id="Sumulas" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingSumulas">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSumulas" aria-expanded="true" aria-controls="collapseSumulas">
+              <strong><i class="fas fa-window-minimize"></i> Súmulas <span class="text-white fs-7">(Atualização Periódica)</span></strong>
+            </button>
+          </h3>
+          <div id="collapseSumulas" class="accordion-collapse collapse show" aria-labelledby="headingSumulas">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+
+                <div class="alert alert-primary fs-6 mb-0 rounded-0" role="alert">
+                  O site da Livraria do Supremo disponibiliza a compilação das Súmulas do STF e das Súmulas Vinculantes, de forma organizada e estruturada. As Súmulas são verbetes que registram o entendimento pacífico ou majoritário do Tribunal sobre determinado tema. As Súmulas vinculantes foram introduzidas no ordenamento jurídico brasileiro pela Emenda Constitucional 45/2004 e regulamentada pela Lei 11.417/2006. A partir da Emenda Constitucional 45/2004, a súmula vinculante foi introduzida no ordenamento jurídico brasileiro. O instituto foi posteriormente regulamentado pela Lei 11.417/2006.
+                </div>
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaVinculante/anexo/2020SmulaVinculante1a29e31a57Completocapaecontedo.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/53.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Súmulas Vinculantes</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até 24/04/2020</strong></p>
+                        <p class="m-0 pt-0 pb-2">Relação de todas as Súmulas Vinculantes editadas pelo STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaVinculante/anexo/2020SmulaVinculante1a29e31a57Completocapaecontedo.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=jurisprudenciaSumulaVinculante" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumula/anexo/Enunciados_Sumulas_STF_1_a_736_Completo.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/54.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Súmula do STF</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Obra atualizada até 1/12/2017</strong></p>
+                        <p class="m-0 pt-0 pb-2">Relação completa das súmulas do STF</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumula/anexo/Enunciados_Sumulas_STF_1_a_736_Completo.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=jurisprudenciaSumula" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - Sumulas - fim -->
+
+
+        <!-- Item - BibTema -->
+        <div id="BibTema" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingBibTema">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBibTema" aria-expanded="true" aria-controls="collapseBibTema">
+              <strong><i class="fas fa-window-minimize"></i> Bibliografias Temáticas</strong>
+            </button>
+          </h3>
+          <div id="collapseBibTema" class="accordion-collapse collapse show" aria-labelledby="headingBibTema">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+
+                <div class="alert alert-primary fs-6 mb-0 rounded-0" role="alert">
+                  As bibliografias temáticas apresentam um levantamento de obras, jurisprudência e legislação a respeito de assuntos em discussão no STF. O objetivo do material é divulgar a doutrina existente nas bibliotecas cooperantes da Rede Virtual de Bibliotecas (RVBI), bem como a legislação e a jurisprudência do STF sobre esses temas.
+                </div>
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Consciencia_negra.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/55.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Consciência Negra Bibliografia, Legislação e Jurisprudência Temática</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Novembro de 2022</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Consciencia_negra.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Populacao_rua.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/56.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>População em Situação de Rua no Brasil</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Novembro de 2022</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/Populacao_rua.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Repercussao_geral_15_anos.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/57.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Repercussão Geral 15 anos Origens e Perspectivas</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Maio 2022</strong></p>
+                        <p class="m-0 pt-0 pb-2">Levantamentos bibliográficos, de legislação e de jurisprudência nacional e internacional</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Repercussao_geral_15_anos.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Producao_mulheres_direito_constitucional.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/58.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Produção de Mulheres em Direito Constitucional</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Março 2022</strong></p>
+                        <p class="m-0 pt-0 pb-2">Levantamentos bibliográficos, de legislação e de jurisprudência nacional e internacional</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Producao_mulheres_direito_constitucional.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Competencialegislativa.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/59.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Competência Legislativa da União, dos Estados e Municípios</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Dezembro 2020</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Competencialegislativa.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/FundoClimaeAmazonia_out_2020.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/60.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Fundo Clima e Amazonia</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Outubro 2020</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/FundoClimaeAmazonia_out_2020.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/BibliografiaControlededadosVersofinalcomcapa.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/61.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Controle de dados de usuários por provedores de internet no exterior</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Novembro 2019</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/BibliografiaControlededadosVersofinalcomcapa.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Bibliografiacandidaturaversofinal2.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/62.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Candidaturas Avulsas</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Novembro 2019</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Bibliografiacandidaturaversofinal2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/transferencia_controle.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/63.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Transferência de Controle Acionário de Empresas Públicas...</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Setembro de 2018</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/transferencia_controle.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBiblioteca/anexo/BIBLIOGRAFIA_LiberdadesdeExpressoArtsticaCulturaldeComunicaoedeInformao.6.11.19.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/64.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Liberdades de Expressão Artística, Cultural, de Comunicação e de Informação</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Outubro 2019</strong></p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBiblioteca/anexo/BIBLIOGRAFIA_LiberdadesdeExpressoArtsticaCulturaldeComunicaoedeInformao.6.11.19.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaBibliografia&pagina=principal" target="_blank"><i class="fas fa-file-alt"></i> <strong>OUTRAS BIBLIOGRAFIAS</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - BibTema - fim -->
+
+
+        <!-- Item - CaseLaw -->
+        <div id="CaseLaw" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingCaseLaw">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaseLaw" aria-expanded="true" aria-controls="collapseCaseLaw">
+              <strong><i class="fas fa-window-minimize"></i> Case Law</strong>
+            </button>
+          </h3>
+          <div id="collapseCaseLaw" class="accordion-collapse collapse show" aria-labelledby="headingCaseLaw">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+
+                <div class="alert alert-primary fs-6 mb-0 rounded-0" role="alert">
+                  Para divulgar internacionalmente a jurisprudência, o STF lançou a publicação Case Law, que consiste em uma tradução para a língua inglesa das decisões proferidas em casos de impacto global. A obra será dividida em volumes temáticos e permitirá a pesquisadores e juízes de outros países consultar os julgamentos do STF para utilizá-los como balizas interpretativas. A primeira edição aborda o tema relacionado à pandemia.
+                </div>
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CLCfundamental_rights1309Veletronicafinal.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/65.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Case Law Compilation Fundamental Rights</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>VOL. 3</strong></p>
+                        <p class="m-0 pt-0 pb-2">Setembro 2022</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CLCfundamental_rights1309Veletronicafinal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/Case_lawFreedom_of_Speech.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/66.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Case Law Compilation Freedom of Speech</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>VOL. 2</strong></p>
+                        <p class="m-0 pt-0 pb-2">Novembro 2021</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/Case_lawFreedom_of_Speech.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19_2.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/67.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Case Law Compilation Covid-19</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>2ª Ed.</strong></p>
+                        <p class="m-0 pt-0 pb-2">Maio 2021</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19_2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/68.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Case Law Compilation Covid-19</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>1ª Ed.</strong></p>
+                        <p class="m-0 pt-0 pb-2">Outubro 2020</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - CaseLaw - fim -->
+
+
+        <!-- Item - BolJuIn -->
+        <div id="BolJuIn" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingBolJuIn">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBolJuIn" aria-expanded="true" aria-controls="collapseBolJuIn">
+              <strong><i class="fas fa-window-minimize"></i> Boletins de Jurisprudência Internacional</strong>
+            </button>
+          </h3>
+          <div id="collapseBolJuIn" class="accordion-collapse collapse show" aria-labelledby="headingBolJuIn">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+
+                <div class="alert alert-primary fs-6 mb-0 rounded-0" role="alert">
+                  Apresenta a compilação de resumos em português de casos decididos pelo STF, por altas Cortes nacionais de diversos países e por órgãos internacionais sobre um tema específico.
+                </div>
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI7REVISTANTIMArevisado.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Revista Íntima</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Dezembro de 2019</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 07</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI7REVISTANTIMArevisado.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PORTUGUÊS</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI7INTIMATEBODYSEARCHreview.pdf" target="_blank"><i class="fas fa-file-alt"></i> <strong>INGLÊS</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI7REQUISAPERSONAL.pdf" target="_blank"><i class="fas fa-file-alt"></i> <strong>ESPANHOL</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/BJI6Porte_de_drogas_para_consumo_pessoal.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Tipicidade do porte de drogas para uso pessoal</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Maio de 2019</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 06</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/BJI6Porte_de_drogas_para_consumo_pessoal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI5_DIREITOAOESQUECIMENTO.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Direito ao esquecimento</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Dezembro de 2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 05</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI5_DIREITOAOESQUECIMENTO.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI3_ABORTO.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Aborto</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Junho de 2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 03</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI3_ABORTO.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/BJI4SACRIFCIODEANIMAISEMRITUAISRELIGIOSOS.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Sacrifício de animais em rituais religiosos</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Setembro de 2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 04</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/BJI4SACRIFCIODEANIMAISEMRITUAISRELIGIOSOS.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI2_HOMESCHOOLING.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Educação domiciliar</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Março de 2018</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 02</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI2_HOMESCHOOLING.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none">
+                      <div class="card-body bg-light rounded p-2">
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI1_TRABALHOESCRAVO.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/69.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Trabalho escravo</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Dezembro de 2017</strong></p>
+                        <p class="m-0 pt-0 pb-2">Edição 01</p>
+                        <ul class="nav nav-pills justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaBoletim/anexo/BJI1_TRABALHOESCRAVO.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - BolJuIn - fim -->
+
+
+        <!-- Item - InfCont -->
+        <div id="InfCont" class="accordion-item mt-3 rounded-0 border-0 shadow">
+          <h3 class="accordion-header" id="headingInfCont">
+            <button class="accordion-button bg-gradient rounded-top fs-5 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfCont" aria-expanded="true" aria-controls="collapseInfCont">
+              <strong><i class="fas fa-window-minimize"></i> Informações e Contatos</strong>
+            </button>
+          </h3>
+          <div id="collapseInfCont" class="accordion-collapse collapse show" aria-labelledby="headingInfCont">
+            <div class="accordion-body p-0">
+              <div class="row rounded-bottom m-0 pb-1 bg2 bg-gradient">
+                
+                <!-- Obras -->
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none" style="min-height: inherit;">
+                      <div class="card-body bg-light rounded p-2">
+                        <h6 class="card-header p-2"><i class="fas fa-comments-dollar float-start p-2 me-2" style="font-size: 60px; background-color: #fff; padding: 10px; border: 1px solid var(--bs-border-color);"></i> <strong>A Livraria do Supremo é uma instituição social. Por isso, oferece <i>download</i> gratuito de suas obras, além de versões impressas por valor acessível, que cobre apenas os custos de impressão.</strong></h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-lg-6 p-0">
+                    <div class="card rounded-0 shadow-none" style="min-height: inherit;">
+                      <div class="card-body bg-light rounded p-2">
+                        <h6 class="card-header p-2"><i class="fas fa-shipping-fast float-start p-2 me-2" style="font-size: 60px; background-color: #fff; padding: 10px; border: 1px solid var(--bs-border-color);"></i> <strong>Enviamos nossas obras para qualquer lugar do Brasil. Basta calcular o frete antes de fechar o seu pedido. O prazo de entrega varia de região para região. É importante lembrar que não despachamos para o exterior.</strong></h6>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Obras - fim -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item - InfCont - fim -->
+
+        <div class="alert alert-primary text-center mt-3" role="alert">
+          <h5 class="alert-heading">HORÁRIO DE FUNCIONAMENTO DA LIVRARIA DO SUPREMO:</h5>
+          <p class="fs-6"><i class="fas fa-clock"></i> DE SEGUNDA A SEXTA DAS 10H ÀS 17H (COM EXCEÇÃO DOS MESES DE JANEIRO E JULHO);<br><i class="fas fa-money-check-alt"></i> PAGAMENTOS SOMENTE EM BOLETO BANCÁRIO</p>
+          <hr>
+          <p class="mb-0 fs-6"><i class="fas fa-home"></i> Supremo Tribunal Federal - Praça dos Três Poderes - Anexo I - Térreo - CEP 70175-900 <i class="fas fa-phone"></i> (61) 3217-4493 <i class="far fa-envelope"></i> livraria.codi@stf.jus.br</p>
+        </div>
+
+      </div>
+      <!--FIM - conteúdo -->
+
+      <!-- rodapé -->
+      <p id="fim" class="fs-5 mt-3">
+        <a href="https://portal.stf.jus.br" class="azul1"><i class="fas fa-arrow-circle-left text-primary azul1"></i> Ir ao Portal do STF</a>
+      </p>
+
+      <hr style="opacity: inherit; border-top: 3px solid #14539a;">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <a href="https://www.stf.jus.br/portal/principal/principal.asp" target="_blank">
+            <img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/logoSTF.png" class="img-fluid m-4" />
+          </a>
+        </div>
+      </div>
+      <!-- fim rodapé -->
+
+    </div><!-- FIM container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+    <script type="text/javascript" src="https://portal.stf.jus.br/assets/lib/bootstrap.bundle.js"></script>
+
+  </body>
+</html>
