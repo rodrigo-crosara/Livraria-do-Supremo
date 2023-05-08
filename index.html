@@ -3,8 +3,8 @@
 Página: Principal (Home)
 Autor: Rodrigo Crosara (rodrigo.crosara@stf.jus.br)
 Criado: 17/03/2023
-Atualizado: 19/04/2023
-Versão: 3.4
+Atualizado: 08/05/2023
+Versão: 3.5
 
 # PUBLICAÇÃO: 99060
 
@@ -67,15 +67,15 @@ https://livrariasupremo.stf.jus.br
           .azul3 { color: #005394; text-decoration: none !important; }
           i { font-style: italic; }
           .img-thumbnail { max-width: 170px; min-width: 170px; padding: 10px; }
-          .nav-item .active, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus { background-color: #fff !important; color: #000 !important; }
+          .nav-item .active, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus { background-color: #cfe2ff !important; color: #054c80 !important; border: 1px solid #b6d4fe; }
           #calAntigos { min-width: 69px; }
           .title-cal { margin: 7px 17px 7px 7px; }
           mark { background: yellow; }
           mark.current { background: orange; }
           .xformBusca { padding: 0 7px; width: 70%; }
           .fixaBusca { position: fixed; bottom: 0; left: 0; z-index: 99; }
-          @media only screen and (max-width: 991px) { .navbar-light .navbar-toggler { border-color: rgb(0 83 148); } .xformBusca { width: 100%; padding: 0; position: fixed; bottom: 0; left: 0; border-top: 3px solid #14539a; } .img-thumbnail { width: 130px; max-width: 130px; min-width: 130px; margin-bottom: 10px; } ul.nav.nav-pills.ms-3.mt-3 { margin-left: 11px !important; } a.nav-link.btn.btn-default-bordered.rounded-0.me-3 { margin: 3px !important; } .title-cal { width:100%; } }
-
+          @media only screen and (max-width: 991px) { .navbar-light .navbar-toggler { border-color: #b6d4fe; background-color: #cfe2ff; } .xformBusca { width: 100%; padding: 0; position: fixed; bottom: 0; left: 0; } .img-thumbnail { width: 130px; max-width: 130px; min-width: 130px; margin-bottom: 10px; } ul.nav.nav-pills.ms-3.mt-3 { margin-left: 11px !important; } a.nav-link.btn.btn-default-bordered.rounded-0.me-3 { margin: 3px !important; } .title-cal { width:100%; } }
+          .input-group-text, .form-control { background-color: #cfe2ff; border: 1px solid #b6d4fe; }
           #myBtn { position: fixed; bottom: 50px; right: 11px; z-index: 999; }
           .accordion-body .card { min-height: 200px; }
           h6.card-header { color: #005591; }
@@ -238,7 +238,7 @@ https://livrariasupremo.stf.jus.br
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="c2023" role="tabpanel" aria-labelledby="c2023-tab">
-          <a href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/calendarioSTF2023.pdf" target="_blank">
+          <a href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=501560" target="_blank">
             <img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/imagem/BcalendarioSTF2023.png" class="d-block w-100 shadow rounded-bottom">
           </a>
         </div>
@@ -287,10 +287,9 @@ https://livrariasupremo.stf.jus.br
         <li class="nav-item"><a class="nav-link text-white pt-3" href="#InfCont"><strong>Informações e Contatos</strong></a></li>
       </ul>
 
-
       <!-- Navegação Lateral -->
       <div id="myBtn" title="Acessibilidade de Navegação" class="form-floating">
-        <select onchange="if (this.value) window.location.href=this.value; this.selectedIndex = 0;" class="form-select bg-light text-center shadow" style="padding: 0 20px 0 0; max-width: 36px; background-image: inherit; border: 1px solid #14539a;">
+        <select onchange="if (this.value) window.location.href=this.value; this.selectedIndex = 0;" class="form-select text-center shadow" style="padding: 0 20px 0 0; max-width: 36px; background-image: inherit; border: 1px solid #b6d4fe; background-color: #cfe2ff;">
           <option class="d-none" selected=""></option>
           <option class="h5" value="#home" >Ir ao topo &uarr;</option>
           <option class="h5" value="#PubEdit">Publicações Editoriais</option>
@@ -335,7 +334,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Edição especial de 30 anos da constituição de 1988</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=388787" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/a_constituicao_e_o_supremo_6a_edicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -364,7 +363,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Disponível em diversos formatos impressos e eletrônicos, em três idiomas</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=441546" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/legislacaoConstituicao/anexo/CF.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -392,7 +391,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">A obra relembra a trajetória da Constituinte e a promulgação da Constituição Cidadã, além de reunir informações sobre o STF.</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=395568" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoLegislacaoAnotada/anexo/30_anos_da_constituicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -420,7 +419,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Obra atualizada até a EC 125/2022 (de 14 de junho de 2022) em uma edição comemorativa.</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=496478" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CF_34anos_EC125_digital.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -445,17 +444,20 @@ https://livrariasupremo.stf.jus.br
                       <div class="card-body bg-light rounded p-2">
                         <a target="_blank" href="https://suprema.stf.jus.br/index.php/suprema/issue/view/3/3"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/5.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
                         <h6 class="card-header p-2"><strong>Suprema - revista de Estudos Constitucionais</strong></h6>
-                        <p class="m-0 pt-2 pb-1"><strong>v.1 n.2 (2021)</strong></p>
+                        <p class="m-0 pt-2 pb-1"><strong>v. 2 n. 1 (2022)</strong></p>
                         <p class="m-0 pt-0 pb-2">Periódico científico semestral, realizado pelo Supremo Tribunal Federal.</p>
                         <ul class="nav nav-pills justify-content-center">
-                          <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link btn btn-default-bordered dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-book"></i> <strong>IMPRESSO</strong> 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=484413">Volume 1 Nº 01</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=487678">Volume 1 Nº 02</a></li>
+                            </ul>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://suprema.stf.jus.br/index.php/suprema/issue/view/3/3" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
@@ -476,14 +478,28 @@ https://livrariasupremo.stf.jus.br
                         <h6 class="card-header p-2"><strong>Memória Jurisprudencial</strong></h6>
                         <p class="m-0 pt-0 pb-2">Coleção que recupera a memória institucional do STF por meio do resgate da vida e da obra de ministros</p>
                         <ul class="nav nav-pills justify-content-center">
-                          <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link btn btn-default-bordered dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-book"></i> <strong>IMPRESSO</strong> 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=96933">Min. Aliomar Baleeiro</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=165903">Min. Carlos Maximiliano</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=97001">Min. Castro Nunes</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=124189">Min. Epitacio Pessôa</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=124148">Min. Evandro Lins</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=165904">Min. Hahnemann Guimarães</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=471529">Min. Leitão de Abreu</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=208629">Min. Nelson Hungria</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=97030">Min. Orozimbo Nonato</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=97010">Min. Pedro Lessa</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=208767">Min. Ribeiro da Costa</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=481014">Min. Teori Zavascki</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=97003">Min. Victor Nunes</a></li>
+                            </ul>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://portal.stf.jus.br/textos/verTexto.asp?servico=publicacaoPublicacaoInstitucionalMemoriaJurisprud" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="far fa-file-alt"></i> <strong>MOBI</strong> </a>
@@ -501,11 +517,11 @@ https://livrariasupremo.stf.jus.br
                     <div class="card rounded-0 shadow-none">
                       <div class="card-body bg-light rounded p-2">
                         <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/codi/anexo/Pesquisa_Plenario_Virtual.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/7.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
-                        <h6 class="card-header p-2"><strong>O Plenário Virtual na Pande-mia da COVID-19</strong></h6>
+                        <h6 class="card-header p-2"><strong>O Plenário Virtual na Pandemia da COVID-19</strong></h6>
                         <p class="m-0 pt-0 pb-2">Potencialidades de impacto do Plenário Virtual no desenho da instituição, esecialmente no contexto da pandemia do Covid-19.</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=484419" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/codi/anexo/Pesquisa_Plenario_Virtual.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -562,7 +578,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Anotada com a jurisprudência do Supremo Tribunal Federal e da Corte Interamericana de Direitos Humanos.</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=500763" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/STF_ConvencaoAmericanaSobreDireitosHumanos_SegundaEdicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -590,8 +606,26 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-2 pb-1"><strong>Obra concluída em 20/04/2020</strong></p>
                         <p class="m-0 pt-0 pb-2">Coletânea de acórdãos e decisões monocráticas do Tribunal</p>
                         <ul class="nav nav-pills justify-content-center">
-                          <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link btn btn-default-bordered dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-book"></i> <strong>IMPRESSO</strong> 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=485896">Nº 239</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=485895">Nº 238</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=436584">Nº 237</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=436583">Nº 236</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=436582">Nº 235</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=424753">Nº 234</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=418546">Nº 233</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=418514">Nº 232</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=418513">Nº 231</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=368209">Nº 230</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=338436">Nº 229</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=309766">Nº 228</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=309754">Nº 227</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=295195">Nº 226</a></li>
+                            </ul>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoRTJ/anexo/239_1.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -614,7 +648,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Data: setembro, 2022</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=500766" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Eleitoral_2ed.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -643,7 +677,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Data: novembro, 2015</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=307720" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_direito_eleitoral.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -672,7 +706,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=368205" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direito_Penal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -701,7 +735,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=405829" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_controle_de_constitucionalidade.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -730,7 +764,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=368208" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CTJ_Direitos_Humanos.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -759,7 +793,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=484417" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/ctj_advocacia_e_oab.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -787,7 +821,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-2 pb-1"><strong>Obra: Abril de 2023</strong></p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=506476" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/Cadernos_STF_Povos_Indigenas_digital.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -815,7 +849,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-2 pb-1"><strong>Obra: Março de 2023</strong></p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=504584" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/CadernosSTFIgualdadeRacial_web.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -843,7 +877,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-2 pb-1"><strong>Obra: Março de 2023</strong></p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=503726" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/2_Cadernos_STF_Genero_Direito_das_Mulheres.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -900,7 +934,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=484418" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/diversidade.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -929,7 +963,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=405827" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/protecao_da_mulher.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -958,7 +992,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=397868" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/igualdade_etnico_racial.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -987,7 +1021,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Tópicos anotados pelo STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=358672" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/dca.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1016,7 +1050,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2014</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=300046" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2014.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1045,7 +1079,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2015</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=342438" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2015.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1074,7 +1108,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2016</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=371860" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2016.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1103,7 +1137,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2017</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=395571" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2017.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1132,7 +1166,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2018</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=414790" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2018.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1190,7 +1224,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Compilação dos resumos noticiados no Informativo STF em 2019</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=483087" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoInformativoLivro/anexo/informativos2019.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1219,7 +1253,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Agrupamento de decisões monocráticas e colegiadas e suas aplicações aos casos concretos respectivos</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=360039" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumulaNaJurisprudencia/anexo/Livro_Sumulas_Vinculantes_2_edicao.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1248,7 +1282,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Livro-homenagem ao Ministro Marco Aurélio pelo Jubileu de Prata no STF</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=294222" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComemoracoes/anexo/Ministro_Marco_Aurelio_25_anos_no_STF.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1305,7 +1339,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-2 pb-1"><strong>31 anos de ciência e consciência constitucionais</strong></p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=484405" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalEdicaoHomenagem/anexo/31_anos_min_marcoaurelio.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1333,7 +1367,7 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-2 pb-1"><strong>31 anos de Jurisdição Constitucional</strong></p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=484405" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalEdicaoHomenagem/anexo/31_anos_min_celsodemello.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
@@ -1356,16 +1390,16 @@ https://livrariasupremo.stf.jus.br
                   <div class="col-lg-6 p-0">
                     <div class="card rounded-0 shadow-none">
                       <div class="card-body bg-light rounded p-2">
-                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComposicPlenarias/anexo/composicoes_plenarias.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/35.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
-                        <h6 class="card-header p-2"><strong>Catálogo de Composições Plenárias do Supremo Tribunal Federal</strong></h6>
-                        <p class="m-0 pt-2 pb-1"><strong>Versão em PDF atualizada até Setembro de 2018</strong></p>
+                        <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/ComposicoesPlenariasdoSTFdigitaled2.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/35.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
+                        <h6 class="card-header p-2"><strong>Catálogo de Composições Plenárias do Supremo Tribunal Federal - 2ª edição</strong></h6>
+                        <p class="m-0 pt-2 pb-1"><strong>Versão em PDF atualizada até 2019</strong></p>
                         <p class="m-0 pt-0 pb-2">Material iconográfico</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=226602" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoInstitucionalComposicPlenarias/anexo/composicoes_plenarias.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/ComposicoesPlenariasdoSTFdigitaled2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>PDF</strong> </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>EPUB</strong> </a>
@@ -1958,10 +1992,10 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Levantamentos bibliográficos, de legislação e de jurisprudência nacional e internacional</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Repercussao_geral_15_anos.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=490202" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Repercussao_geral_15_anos.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
                           </li>
                         </ul>
                       </div>
@@ -1978,10 +2012,10 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Levantamentos bibliográficos, de legislação e de jurisprudência nacional e internacional</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Producao_mulheres_direito_constitucional.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=485506" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaBibliografia/anexo/Producao_mulheres_direito_constitucional.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
                           </li>
                         </ul>
                       </div>
@@ -2138,10 +2172,10 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Setembro 2022</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CLCfundamental_rights1309Veletronicafinal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=495158" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoConteudoTextual/anexo/CLCfundamental_rights1309Veletronicafinal.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
                           </li>
                         </ul>
                       </div>
@@ -2158,10 +2192,10 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Novembro 2021</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/Case_lawFreedom_of_Speech.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=483948" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/jurisprudenciaInternacional/anexo/Case_lawFreedom_of_Speech.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
                           </li>
                         </ul>
                       </div>
@@ -2174,14 +2208,14 @@ https://livrariasupremo.stf.jus.br
                       <div class="card-body bg-light rounded p-2">
                         <a target="_blank" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19_2.pdf"><img src="https://www.stf.jus.br/arquivo/cms/publicacaoCatalogoProdutoProduto/imagem/67.png" alt="Imagem da Capa" class="img-thumbnail img-fluid float-start p-2 me-2"></a>
                         <h6 class="card-header p-2"><strong>Case Law Compilation Covid-19</strong></h6>
-                        <p class="m-0 pt-2 pb-1"><strong>2ª Ed.</strong></p>
+                        <p class="m-0 pt-2 pb-1"><strong>VOL. 1</strong></p>
                         <p class="m-0 pt-0 pb-2">Maio 2021</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19_2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=483945" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19_2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
                           </li>
                         </ul>
                       </div>
@@ -2198,10 +2232,10 @@ https://livrariasupremo.stf.jus.br
                         <p class="m-0 pt-0 pb-2">Outubro 2020</p>
                         <ul class="nav nav-pills justify-content-center">
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
+                            <a class="nav-link btn btn-default-bordered active" href="https://livrariasupremo.stf.jus.br/produto!detalhe.action?produtoId=483941" target="_blank"><i class="fas fa-book"></i> <strong>IMPRESSO</strong> </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-default-bordered disabled" href="#" target="_blank"><i class="fas fa-file-alt"></i> <strong>VERSÃO EM HTML</strong> </a>
+                            <a class="nav-link btn btn-default-bordered" href="https://www.stf.jus.br/arquivo/cms/publicacaoPublicacaoTematica/anexo/case_law_compilation_covid19.pdf" target="_blank"><i class="fas fa-file-pdf"></i> <strong>VERSÃO EM PDF</strong> </a>
                           </li>
                         </ul>
                       </div>
